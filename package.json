@@ -1,19 +1,19 @@
 {
-  "name": "test-plan",
-  "version": "0.1.1",
+  "name": "plando",
+  "version": "0.1.2",
   "description": "Count assertions and call function at the end",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -t 5000 --recursive test --bail --colors --reporter spec --debug -u tdd --log true"
   },
-  "repository": "iefserge/test-plan",
+  "repository": "taoyuan/plando",
   "author": "Serge",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iefserge/test-plan/issues"
+    "url": "https://github.com/taoyuan/plando/issues"
   },
-  "homepage": "https://github.com/iefserge/test-plan",
+  "homepage": "https://github.com/taoyuan/plando",
   "devDependencies": {
-    "mocha": "^2.0.1"
+    "mocha": "^2.2.5"
   }
 }
