@@ -29,5 +29,9 @@ Plan.prototype.ok = function (expression) {
     }
 };
 
+Plan.prototype.check = function () {
+    this.ok(true);
+};
+
 exports.plan = Plan;
 
