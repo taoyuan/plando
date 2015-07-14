@@ -1,13 +1,13 @@
-## SYNOPSIS
-Count assertions and call function at the end
+# plando
+> Count assertions and call function at the end.
 
 ## USAGE
 
 ```js
-var Plan = require('test-plan');
+var pd = require('plando');
 
 it('should be able to wait for two events', function(done) {
-  var plan = new Plan(2, done);
+  var plan = pd.plan(2, done);
 
   setTimeout(function() {
     plan.ok(true);
