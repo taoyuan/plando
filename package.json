@@ -1,6 +1,6 @@
 {
   "name": "plando",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Count assertions and call function at the end",
   "main": "index.js",
   "scripts": {
