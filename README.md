@@ -7,14 +7,14 @@
 var pd = require('plando');
 
 it('should be able to wait for two events', function(done) {
-  var plan = pd.plan(2, done);
+  var d = pd(2, done);
 
   setTimeout(function() {
-    plan.ok(true);
+    d.ok(true);
   }, 20);
 
   setTimeout(function() {
-    plan.ok(true);
+    d();
   }, 10);
 });
 ```
