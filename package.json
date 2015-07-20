@@ -15,5 +15,8 @@
   "homepage": "https://github.com/taoyuan/plando",
   "devDependencies": {
     "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "depd": "^1.0.1"
   }
 }

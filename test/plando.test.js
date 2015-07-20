@@ -2,35 +2,35 @@ var pd = require('../');
 
 describe('Plan', function () {
     it('should be able to wait for two events', function (done) {
-        var plan = pd.plan(2, done);
+        var d = pd(2, done);
         setTimeout(function () {
-            plan.ok(true);
+            d()
         }, 20);
         setTimeout(function () {
-            plan.ok(true);
+            d()
         }, 10);
     });
 
     it('should be able to wait for a single event', function (done) {
-        var plan = pd.plan(1, done);
+        var d = pd(1, done);
         setTimeout(function () {
-            plan.ok(true);
+            d()
         }, 50);
     });
 
     it('should be able to proceed when count=0', function (done) {
-        pd.plan(0, done);
+        pd(0, done);
     });
 
     it('should throw when any condition is invalid', function (done) {
-        var plan = pd.plan(2, function () {
+        var d = pd(2, function () {
         });
         setTimeout(function () {
-            plan.ok(true);
+            d();
         }, 10);
         setTimeout(function () {
             try {
-                plan.ok(false);
+                d.ok(false);
             } catch (e) {
                 done();
             }
